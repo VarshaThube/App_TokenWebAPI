@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using TokenWebAPI;
 using TokenWebAPI.Bussiness;
 using TokenWebAPI.DataAccess;
 

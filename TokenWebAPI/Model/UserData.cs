@@ -1,4 +1,4 @@
-﻿namespace TokenWebAPI
+﻿namespace TokenWebAPI.Model
 {
     public class UserData
     {

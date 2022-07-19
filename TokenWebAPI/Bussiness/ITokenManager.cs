@@ -1,4 +1,4 @@
-﻿namespace TokenWebAPI
+﻿namespace TokenWebAPI.Bussiness
 {
     public interface ITokenManager
     {

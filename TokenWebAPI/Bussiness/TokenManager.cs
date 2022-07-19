@@ -2,8 +2,9 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using TokenWebAPI.Model;
 
-namespace TokenWebAPI
+namespace TokenWebAPI.Bussiness
 {
     public class TokenManager : ITokenManager
     {
@@ -21,7 +22,7 @@ namespace TokenWebAPI
         /// <returns></returns>
         public string Autheticate(string userName, string password)
         {
-            if (!UserData.User.Any(x => x.Key.Equals(userName) && (x.Value.Equals(password))))
+            if (!UserData.User.Any(x => x.Key.Equals(userName) && x.Value.Equals(password)))
                 return null;
 
             var key = _configuration.GetValue<string>("JwtConfig:Key");
